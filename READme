@@ -1,6 +1,10 @@
 This respository elaborates the details of the paper "Towards Robust Neuromorphic/Event Vision-Based Fall Detection: Cross-Dataset Generalisation Benchmarking"
 
 ## Introduction
+This is the official repository for "Sequential Human Assembly and Disassembly Motions in Human-Robot Coexisting Environments
+" including Python scripts. 
+
+## Introduction
 This project studies **event-camera-based fall detection** under realistic domain shifts. We train fall detectors on **synthetic event streams** generated from multiple RGB fall datasets and validate generalization on a **native neuromorphic dataset (PAF)**. The goal is to stress-test robustness across **different recording conditions, subjects, and event-generation methods**, not just optimize in-dataset accuracy. See **Table II** for the full dataset overview.
 
 ## Datasets
