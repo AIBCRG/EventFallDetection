@@ -9,20 +9,20 @@ We train and evaluate our fall detection approach using **four RGB datasets conv
 
 ### RGB-to-Event (Synthetic Event Streams)
 - **GMDCSA-24**  
-  A compact dataset with **160 sequences** (**81 falls**, **79 ADL**) from **4 subjects**, including **frame-level temporal annotations**. Its small footprint (~**1.95 GB**) makes it a practical choice for **edge deployment** and rapid iteration. \[[36]–[38]\]
+  A compact dataset with **160 sequences** (**81 falls**, **79 ADL**) from **4 subjects**, including **frame-level temporal annotations**. Its small footprint (~**1.95 GB**) makes it a practical choice for **edge deployment** and rapid iteration. 
 
 - **Multiple Cameras**  
-  Includes **24 calibrated multi-camera scenarios** with **9 position states** and **explicit temporal phase annotations** that support **fall decomposition** (i.e., breaking a fall into phases). \[[24]\]
+  Includes **24 calibrated multi-camera scenarios** with **9 position states** and **explicit temporal phase annotations** that support **fall decomposition** (i.e., breaking a fall into phases).
 
 - **CAUCAFall**  
-  Contains **100 videos** with **20,002 per-frame binary annotations** from **10 subjects**, recorded in **uncontrolled environments**. It captures real-world nuisance factors like **variable lighting** and **occlusions**, making it valuable for robustness testing. \[[39], [40]\]
+  Contains **100 videos** with **20,002 per-frame binary annotations** from **10 subjects**, recorded in **uncontrolled environments**. It captures real-world nuisance factors like **variable lighting** and **occlusions**, making it valuable for robustness testing.
 
 - **FallVision**  
-  The largest dataset used here, comprising **11,732 videos** from **58 subjects**. It provides detailed **17-point pose keypoint annotations** across **multiple recording angles and positions**, supporting richer supervision and analysis. \[[41], [42]\]
+  The largest dataset used here, comprising **11,732 videos** from **58 subjects**. It provides detailed **17-point pose keypoint annotations** across **multiple recording angles and positions**, supporting richer supervision and analysis.
 
 ### Native Event Dataset (Real Neuromorphic Recordings)
 - **PAF (neuromorphic)**  
-  Used for cross-dataset generalization evaluation after training on RGB-to-event data. PAF includes **180 native neuromorphic recordings** captured with the **DAVIS346redColor event camera** from **15 subjects** performing four action classes: **falling**, **bending**, **slumping**, and **tying shoes**. \[[22]\]
+  Used for cross-dataset generalization evaluation after training on RGB-to-event data. PAF includes **180 native neuromorphic recordings** captured with the **DAVIS346redColor event camera** from **15 subjects** performing four action classes: **falling**, **bending**, **slumping**, and **tying shoes**.
 
 ## Cross-Dataset Evaluation Protocol
 Following training on the converted RGB-to-event datasets, we evaluate model generalization on **PAF**. This strategy—combining **synthetic event data** from diverse RGB sources with **native event-camera recordings**—provides a rigorous assessment of **robustness** and **domain adaptation** across different event generation methods and sensing conditions.
