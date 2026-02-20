@@ -1,4 +1,4 @@
-### Towards Robust Neuromorphic/Event Vision-Based Fall Detection: Cross-Dataset Generalisation Benchmarking"
+### Towards Robust Neuromorphic/Event Vision-Based Fall Detection: Cross-Dataset Generalisation Benchmarking
 
 
 ## Introduction
