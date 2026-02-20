@@ -27,7 +27,7 @@ We train and evaluate our fall detection approach using **four RGB datasets conv
   Link: https://github.com/CrystalMiaoshu/PAFBenchmark
 
 ## RGB to Event Conversion
-We have used Metavision SDK Video to Event Simulator. This allows you to transform frame-based image or video into event-based counterpart.
+We have used Metavision SDK Video to Event Simulator. This allows you to transform frame-based image or video into event-based counterpart. The code file "v2emetavision.py" is also added. For further details and documentation on Metavision SDk please follow link below:
 
 Link: https://docs.prophesee.ai/stable/samples/modules/core_ml/viz_video_to_event_simulator.html
 
