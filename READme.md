@@ -24,6 +24,11 @@ We train and evaluate our fall detection approach using **four RGB datasets conv
 - **PAF (neuromorphic)**  
   Used for cross-dataset generalization evaluation after training on RGB-to-event data. PAF includes **180 native neuromorphic recordings** captured with the **DAVIS346redColor event camera** from **15 subjects** performing four action classes: **falling**, **bending**, **slumping**, and **tying shoes**.
 
+## RGB to Event Conversion
+We have used Metavision SDK Video to Event Simulator. This allows you to transform frame-based image or video into event-based counterpart.
+
+Link: https://docs.prophesee.ai/stable/samples/modules/core_ml/viz_video_to_event_simulator.html
+
 ## Cross-Dataset Evaluation Protocol
 Following training on the converted RGB-to-event datasets, we evaluate model generalization on **PAF**. This strategy—combining **synthetic event data** from diverse RGB sources with **native event-camera recordings**—provides a rigorous assessment of **robustness** and **domain adaptation** across different event generation methods and sensing conditions.
 
